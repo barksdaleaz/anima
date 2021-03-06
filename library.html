@@ -7,28 +7,64 @@
 
 <body>
   <h1>Library</h1>
-  <p>Here is the library.</p>
-  <p>Entered the library: I find a sketchbook on the shelf ... Wow!! There is a handful of plant sketches ...</p>
-  <p style="color:darkviolet;"> Which page should I look at? Hint: I remember some # from labratory</p>
-
-	<p>Please enter the page number that you want to brownse:
-	<button onclick="myFunction()">page#</button>
+  <img src="library.jpg" width="50" height="60">
+  <p>After turning the knob six times and magnifying the image 19x, you hear a strange rumbling sound. 
+	A shelf in the back slides to the left, revealing another room. You enter into a dim room full of bookcases. 
+	A strange meditative music plays in the background as the lamps flicker. Maybe one of these books will reveal more information about why you’re here. 
 	</p>
+  <p style="color:darkviolet;"> But where should you look? Hint: some # from the labratory</p>
 
+	<p>Please enter the volume number that you want to brownse:
+	<button onclick="volFunction()">volume#</button>
+	</p>
 	<p id="demo"></p>
-
 	<script>
-	function myFunction() {
-    		var num = 5;
-  		var page = prompt("enter a number","0");
-  		if(page=='5') {
-    			text = "correct";
-		}
+	function volFunction() {
+  			var vol = prompt("enter a vol number","0");
+  			if(vol=='6') {
+    				text = "correct";
+			}
         	else{
         		text = "Try again...";
-        	}
+       		}
             
-        	document.getElementById("demo").innerHTML = text;
+       		document.getElementById("demo").innerHTML = text;
+	}
+	</script>
+    
+    <p>Please enter the chapter number that you want to brownse:
+    <button onclick="chpFunction()">chp#</button>
+    </p>
+    <p id="demo2"></p>
+    <script>
+	function chpFunction() {
+  			var chp = prompt("enter a chp number","0");
+  			if(chp=="19") {
+    				text = "correct";
+			}
+        	else{
+        		text = "Try again...";
+       		}
+            
+       		document.getElementById("demo2").innerHTML = text;
+	}
+	</script>
+    
+    <p>Please enter the page number that you want to brownse:
+    <button onclick="pgFunction()">page#</button>
+    </p>
+    <p id="demo3"></p>
+    <script>
+	function pgFunction() {
+  			var page = prompt("enter a chp number","0");
+  			if(page=='98') {
+    				text = "correct";
+			}
+        	else{
+        		text = "Try again...";
+       		}
+            
+       		document.getElementById("demo3").innerHTML = text;
 	}
 	</script>
 
@@ -38,12 +74,10 @@
   <iframe src="https://console.echoar.xyz/webar?key=delicate-block-6852&entry=e91cd52f-ee89-4cd2-8e52-0173a60fa893"
   width="400" height="500"></iframe>
 
-  <img src="library.png" width="500" height="600">
-
   
   <p>
-	An plant cirrus image as a link: <a href="">
-	<img src="plant_cirrus.jpg" width="100" height="100">
+	follow cirrus: <a href="">
+	<img src="plant_cirrus.jpg" width="10" height="10">
 	</a>
   </p>
     
