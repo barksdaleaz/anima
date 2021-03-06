@@ -72,11 +72,23 @@
   <p>It's getting darker and darker... The light goes off!!!</p>
   <p>Where is this plant heading to...?</p>
   <iframe src="https://console.echoar.xyz/webar?key=delicate-block-6852&entry=e91cd52f-ee89-4cd2-8e52-0173a60fa893"
-  width="400" height="500"></iframe>
+  width="40" height="50"></iframe>
 
+	<p> <button onclick="hintFunction()">Hint</button> </p>
+    <p id="hint"></p>
+     <script>
+	function hintFunction() {
+    	var hint = prompt("Hint? y/n","y");
+  		if(hint=='y') {
+    		text = "if you got all the correct vol/chp/pg #, follow cirrus through entering an url... that is made up with vol/chp/pg # format: ";
+        }
+    	document.getElementById("hint").innerHTML = text;
+    }
+  </script>
   
   <p>
-	follow cirrus: <a href="/volume6/chapter19/page19">
+  
+	follow cirrus: <a href="">
 	<img src="plant_cirrus.jpg" width="10" height="10">
 	</a>
   </p>
