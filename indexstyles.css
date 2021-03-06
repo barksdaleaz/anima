@@ -1,10 +1,13 @@
 body {
   background-image: url("./magnolia.png");
   background-color: grey;
+  background-repeat: no-repeat;
 }
 
 img {
   background: transparent;
+  display: block;
+  margin-left: 50px;
 }
 
 .ml12 {
