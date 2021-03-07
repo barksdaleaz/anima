@@ -5,6 +5,9 @@ var aText = new Array(
     "You tried looking for a water source and found three faucets. \n" +
     "The first had a pacifier. The second had a line with an x. The last faucet had a picture of a book. Could there be clues in the rooms you’d been in? \n"
 );
+var bText = new Array(
+    "What can you see when the fountain fills up? Use the URL to answer it.\n"
+);
 // var aText = new Array(
 // "Short test",
 // );
@@ -39,5 +42,29 @@ function typewriter()
  }
 }
 
+function typewriter2()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext2");
+
+ while ( iRow < iIndex ) {
+  sContents += bText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + bText[iIndex].substring(0, iTextPos) + "_";
+ iArrLength = bText[iIndex].length;
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != bText.length ) {
+   iArrLength = bText[iIndex].length;
+   setTimeout("typewriter2()", 1000);
+  }
+ } else {
+  setTimeout("typewriter2()", iSpeed);
+ }
+}
+
 
 typewriter();
+typewriter2();
