@@ -3,10 +3,11 @@ var aText = new Array(
     "Suddenly you remember. You were working on a panacea that would help cure the disease that currently plagued the world. You had forgotten an ingredient in the recipe. You walked past the mess of vines, and found the fountain you were looking for. However, it was dry. \n" +
     "\n" +
     "You tried looking for a water source and found three faucets. \n" +
-    "The first had a pacifier. The second had a line with an x. The last faucet had a picture of a book. Could there be clues in the rooms you’d been in? \n"
+    "The first had a pacifier. The second had a line with an x. The last had a mirror. Could there be clues in the rooms you’d been in? \n"
+    + "You suddenly come to a realization. 6/19 was your birthdate, Magnolia was your name.\n"
 );
 var bText = new Array(
-    "What can you see when the fountain fills up? Use the URL to answer it.\n"
+    "But what did the mirror mean? Use the URL to answer it.\n"
 );
 // var aText = new Array(
 // "Short test",
