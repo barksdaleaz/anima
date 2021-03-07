@@ -1,3 +1,5 @@
+
+
 // set up text to print, each item in array is new line
 var aText = new Array(
 "With the smell and taste of the mysterious liquid hitting your senses, you suddenly feel an urge to vomit.",
@@ -67,3 +69,22 @@ function typewriter2()
 
 typewriter();
 typewriter2();
+
+// ----------- //
+$(document).ready(function() {
+    $('#submit').hide();
+    $('#tryagain').hide();
+    $('#amount').keyup(function() {
+        if ($(this).val() == '') {
+            $('#submit').hide();
+            $('#tryagain').hide();
+        }
+        else if ($(this).val() == '6/19'){
+            $('#submit').show();
+            $('#tryagain').hide();
+        }
+        else {
+            $('#tryagain').show();
+        }
+    });
+});
