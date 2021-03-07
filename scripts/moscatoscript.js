@@ -12,7 +12,7 @@ function dateFunction()
       text = "Try again...";
     }
     
-    document.getElementById("demo").innerHTML = text;
+    document.getElementById("submitDate").innerHTML = text;
     
 }
 
