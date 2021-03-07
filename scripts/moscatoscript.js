@@ -12,6 +12,8 @@ function dateFunction()
       text = "Try again...";
     }
     
+    document.getElementById("demo").innerHTML = text;
+    
 }
 
 // set up text to print, each item in array is new line
