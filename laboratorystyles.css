@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
-html{
+html {
   min-height: 100%;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 body {
@@ -13,8 +13,62 @@ body {
   letter-spacing: 6px;
   font-weight: bold;
   height: calc(100vh - 8em);
-  padding: 1em;
+  padding: 0.5em;
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;
   background-color: rgb(25,25,25);
 }
+.slide {
+  width: 90vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  /* transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left; */
+}
+
+/* .outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  /* scrollbar-width: none;
+  -ms-overflow-style: none;
+} */
+::-webkit-scrollbar {
+  display:none;
+}
+
+.one {
+  background: rgb(25,25,25);
+}
+.two {
+  position: relative;
+  /* height: 400px; */
+  display: block;
+  background-image: url('homelab.jpg');
+  background-size: cover;
+  box-shadow: inset 0 0 200px black;
+}
+.three {
+  padding-left: 100px;
+  background: rgb(25,25,25);
+}
+.four {
+  background: rgb(25,25,25);
+}
+
+#lab {
+
+}
+
+/*
+#typedtext {
+  height: auto;
+} */
