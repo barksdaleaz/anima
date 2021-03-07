@@ -7,6 +7,9 @@ var aText = new Array(
 "There are several tables with beakers and research notes scattered all over.",
 "At the center of the table is a large microscope."
 );
+// var aText = new Array(
+// "Short test",
+// );
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array

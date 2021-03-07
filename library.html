@@ -2,97 +2,57 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Page Title</title>
+	<title>Library</title>
+	<link rel="stylesheet" href="librarystyles.css">
+	<script src="libraryscript.js" async></script>
 </head>
 
 <body>
   <h1>Library</h1>
-  <img src="library.jpg" width="50" height="60">
-  <p>After turning the knob six times and magnifying the image 19x, you hear a strange rumbling sound. 
-	A shelf in the back slides to the left, revealing another room. You enter into a dim room full of bookcases. 
-	A strange meditative music plays in the background as the lamps flicker. Maybe one of these books will reveal more information about why you’re here. 
-	</p>
-  <p style="color:darkviolet;"> But where should you look? Hint: some # from the labratory</p>
+  <img src="library.png" width="50" height="60">
+	<div class="scrolling-wrapper">
+	  <div id="typedtext" class="card"></div>
+	  <div class="card">
+			<p style="color:darkviolet;"> But where should you look? Hint: some # from the labratory</p>
 
-	<p>Please enter the volume number that you want to brownse:
-	<button onclick="volFunction()">volume#</button>
-	</p>
-	<p id="demo"></p>
-	<script>
-	function volFunction() {
-  			var vol = prompt("enter a vol number","0");
-  			if(vol=='6') {
-    				text = "correct";
-			}
-        	else{
-        		text = "Try again...";
-       		}
-            
-       		document.getElementById("demo").innerHTML = text;
-	}
-	</script>
-    
-    <p>Please enter the chapter number that you want to brownse:
-    <button onclick="chpFunction()">chp#</button>
-    </p>
-    <p id="demo2"></p>
-    <script>
-	function chpFunction() {
-  			var chp = prompt("enter a chp number","0");
-  			if(chp=="19") {
-    				text = "correct";
-			}
-        	else{
-        		text = "Try again...";
-       		}
-            
-       		document.getElementById("demo2").innerHTML = text;
-	}
-	</script>
-    
-    <p>Please enter the page number that you want to brownse:
-    <button onclick="pgFunction()">page#</button>
-    </p>
-    <p id="demo3"></p>
-    <script>
-	function pgFunction() {
-  			var page = prompt("enter a chp number","0");
-  			if(page=='98') {
-    				text = "correct";
-			}
-        	else{
-        		text = "Try again...";
-       		}
-            
-       		document.getElementById("demo3").innerHTML = text;
-	}
-	</script>
+			<p>Please enter the volume number that you want to brownse:
+			<button onclick="volFunction()">volume#</button>
+			</p>
+			<p id="demo"></p>
+	  </div>
+	  <div class="card">
+			<p>Please enter the chapter number that you want to brownse:
+	    <button onclick="chpFunction()">chp#</button>
+	    </p>
+	    <p id="demo2"></p>
+	  </div>
+	  <div class="card">
+			<p>Please enter the page number that you want to brownse:
+	    	<button onclick="pgFunction()">page#</button>
+			</p>
+	    <p id="demo3"></p>
+	  </div>
+	  <div class="card">
+			<p>It's getting darker and darker... The light goes off!!!</p>
+		  <p>Where is this plant heading to...?</p>
+		  <iframe src="https://console.echoar.xyz/webar?key=delicate-block-6852&entry=e91cd52f-ee89-4cd2-8e52-0173a60fa893"
+		  width="40" height="50"></iframe>
 
-  
-  <p>It's getting darker and darker... The light goes off!!!</p>
-  <p>Where is this plant heading to...?</p>
-  <iframe src="https://console.echoar.xyz/webar?key=delicate-block-6852&entry=e91cd52f-ee89-4cd2-8e52-0173a60fa893"
-  width="40" height="50"></iframe>
+			<p> <button onclick="hintFunction()">Hint</button> </p>
+		    <p id="hint"></p>
+	  </div>
+	  <div class="card">
+			<p>
 
-	<p> <button onclick="hintFunction()">Hint</button> </p>
-    <p id="hint"></p>
-     <script>
-	function hintFunction() {
-    	var hint = prompt("Hint? y/n","y");
-  		if(hint=='y') {
-    		text = "if you got all the correct vol/chp/pg #, follow cirrus through entering an url... that is made up with vol/chp/pg # format: ";
-        }
-    	document.getElementById("hint").innerHTML = text;
-    }
-  </script>
-  
-  <p>
-  
-	follow cirrus: <a href="">
-	<img src="plant_cirrus.jpg" width="10" height="10">
-	</a>
-  </p>
-    
+			follow cirrus: <a href="">
+			<img src="plant_cirrus.jpg" width="10" height="10">
+			</a>
+		  </p>
+	  </div>
+	  <div class="card">item 7</div>
+	  <div class="card">item 8</div>
+	</div>
+
 </body>
 
 </html>
