@@ -79,6 +79,18 @@ body {
   background: rgb(25,25,25);
 }
 
+.button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
 
 /*
 #typedtext {
