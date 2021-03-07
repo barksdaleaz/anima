@@ -1,7 +1,9 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-  "You find a fountain with clean water!!! Look around and see what you could discover." +
-    "There might be something hidden somewhere... "
+    "Suddenly you remember. You were working on a panacea that would help cure the disease that currently plagued the world. You had forgotten an ingredient in the recipe. You walked past the mess of vines, and found the fountain you were looking for. However, it was dry. \n" +
+    "\n" +
+    "You tried looking for a water source and found three faucets. \n" +
+    "The first had a pacifier. The second had a line with an x. The last faucet had a picture of a book. Could there be clues in the rooms you’d been in? \n"
 );
 // var aText = new Array(
 // "Short test",
