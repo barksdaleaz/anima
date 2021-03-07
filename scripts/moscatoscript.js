@@ -1,11 +1,9 @@
 function dateFunction()
   {
-    var dateInput = prompt("Enter the date: ","0/0");
-    if(dateInput == "6/19")
+    var dateInput = prompt("Enter the date: ","000");
+    if(dateInput == "619")
     {
       text = "knowledge";
-  
-  
     }
     else
     {
