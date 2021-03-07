@@ -1,24 +1,24 @@
-// function () {
-//     // $('#submit').hide();
-//     // $('#tryagain').hide();
-//     var submit = document.getElementById("submit");
-//     var tryagain = document.getElementById("tryagain");
-//     submit.hide();
-//     tryagain.hide();
-//     $('#amount').keyup(function() {
-//         if ((this).val() == '') {
-//             // ('#submit').hide();
-//             // ('#tryagain').hide();
-//         }
-//         else if ((this).val() == '6/19'){
-//             submit.style.color: rgba(255,255,255,.75);
-//             $('#tryagain').hide();
-//         }
-//         else {
-//             tryagain.style.color: rgba(255,255,255,.75);
-//         }
-//     });
-// });
+ function () {
+     // $('#submit').hide();
+     // $('#tryagain').hide();
+     var submit = document.getElementById("submit");
+     var tryagain = document.getElementById("tryagain");
+     submit.hide();
+     tryagain.hide();
+     $('#amount').keyup(function() {
+         if ((this).val() == '') {
+              //('#submit').hide();
+              //('#tryagain').hide();
+         }
+         else if ((this).val() == '6/19'){
+             submit.style.color: rgba(255,255,255,.75);
+             $('#tryagain').hide();
+         }
+         else {
+             tryagain.style.color: rgba(255,255,255,.75);
+         }
+     });
+ });
 
 // set up text to print, each item in array is new line
 var aText = new Array(
