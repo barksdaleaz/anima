@@ -9,7 +9,7 @@ var aText = new Array(
 "Next to your body, you see a half-spilled bottle of wine. You lift it up and smell the contents, grimacing at the stench.",
 "Certainly doesn’t smell like wine...You read the label...MOSCATO...."
 );
-var iSpeed = 100; // time delay of print out
+var iSpeed = 50; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
 var iScrollAt = 20; // start scrolling up at this many lines
