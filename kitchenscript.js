@@ -2,7 +2,7 @@
 var aText = new Array(
 "You wake up confused on the cold, hard tiles. Your head hurts and your body feels weak.",
 "You try to remember something, anything. But everything comes up blank. ",
-"Your name, what you were doing here, where you were... Everything was blank",
+"Your name, what you were doing here, where you were... You couldn't remember anything",
 "You stumble and look around to see the cabinets of a fancy kitchen.",
 "On the calendar hanging on the wall, you see a big red circle around June 19, with the words “23rd Birthday!” next to it.",
 "Is that even today’s date? Whose birthday was it?",
