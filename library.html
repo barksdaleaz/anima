@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,30 +16,67 @@
 			</div>
 			<div class="slide two">
 				<p style="color:darkviolet;"> But where should you look? Hint: some # from the laboratory</p>
-				<video width='500' height='150'
-       					onmouseenter='VideoController(true, this)'
-       					onmouseleave='VideoController(false, this)'
-       					src="book.mp4" loop>
-  				Your browser does not support the video tag.
-				</video>
+				<iframe src="https://console.echoar.xyz/webar?key=old-snowflake-5180&entry=38bddb00-ac2a-4204-b2cc-5a7f85e4480d"
+			  width="300" height="400"></iframe>
 			</div>
 			<div class="slide three">
 				<p>Please enter the volume number that you want to browse:
 				<button onclick="volFunction()">volume#</button>
 				</p>
 				<p id="demo"></p>
+			<script>
+			  function volFunction() {
+			    var vol = prompt("enter a vol number","0");
+			    if(vol=='6') {
+			      text = "correct";
+			    }
+			    else{
+			      text = "Try again...";
+			    }
+
+			    document.getElementById("demo").innerHTML = text;
+			  }
+			</script>
+
 			</div>
 			<div class="slide four">
 				<p>Please enter the chapter number that you want to browse:
 		    		<button onclick="chpFunction()">chp#</button>
 		    		</p>
 				<p id="demo2"></p>
+			<script>
+			  function chpFunction() {
+			    var chp = prompt("enter a chp number","0");
+			    if(chp=="19") {
+			      text = "correct";
+			    }
+			    else{
+			      text = "Try again...";
+			    }
+
+			    document.getElementById("demo2").innerHTML = text;
+			  }
+			</script>
+
 			</div>
 			<div class="slide five">
 				<p>Please enter the page number that you want to browse:
 		    	<button onclick="pgFunction()">page#</button>
 				</p>
-		    <p id="demo3"></p>
+		   	 <p id="demo3"></p>
+			<script>
+			  function pgFunction() {
+			    var page = prompt("enter a chp number","0");
+			    if(page=='98') {
+				text = "correct";
+			    }
+			    else{
+			      text = "Try again...";
+			    }
+
+			    document.getElementById("demo3").innerHTML = text;
+			  }
+			</script>
 
 			</div>
 			<div class="slide six">
@@ -50,9 +88,19 @@
 				<p> <button onclick="hintFunction()">Hint</button> </p>
 			    <p id="hint"></p>
 
+		      <script>
+			function hintFunction() {
+			  var hint = prompt("Hint? y/n","y");
+			  if(hint=='y') {
+			    text = "if you got all the correct vol/chp/pg #, follow cirrus through entering an url... that is made up with vol/chp/pg # format: ";
+			  }
+			  document.getElementById("hint").innerHTML = text;
+			}
+		      </script>
+
 			</div>
 			<div class="slide seven">
-				<p>follow cirrus:<a href="">
+				<p>follow magnolia:<a href="">
 				<img src="plant_cirrus.jpg" width="10" height="10">
 				</a>
 			  </p>
