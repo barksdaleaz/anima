@@ -49,50 +49,27 @@ body {
   background: rgb(25,25,25);
 }
 .two {
-  padding-left: 100px;
-  background: rgb(25,25,25);
-}
-.three {
   position: relative;
   /* height: 400px; */
   display: block;
-  background-image: url('library.png');
+  background-image: url('../assets/homelab.jpg');
   background-size: cover;
   box-shadow: inset 0 0 200px black;
 }
+.three {
+  padding-left: 100px;
+  background: rgb(25,25,25);
+}
 .four {
-  padding-left: 100px;
   background: rgb(25,25,25);
 }
 
-.five {
-  padding-left: 100px;
-  background: rgb(25,25,25);
+/* #submit {
+  color: rgb(25,25,25);
 }
 
-.six {
-  padding-left: 100px;
-  background: rgb(25,25,25);
-}
-.seven {
-  padding-left: 100px;
-  background: rgb(25,25,25);
-}
-
-.button {
-  background-color: gray;
-  border: none;
-  color: white;
-  padding: 5px 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 2px 2px;
-  cursor: pointer;
-}
-
-/*
-#typedtext {
-  height: auto;
+#tryagain {
+  color: rgb(25,25,25);
 } */
+
+/* --------------- */

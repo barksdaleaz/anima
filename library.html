@@ -4,8 +4,8 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Library</title>
-	<link rel="stylesheet" href="librarystyles.css">
-	<script src="libraryscript.js" async></script>
+	<link rel="stylesheet" href="styles/librarystyles.css">
+	<script src="scripts/libraryscript.js" async></script>
 </head>
 
 <body>
@@ -19,111 +19,29 @@
 				<video width='500' height='150'
        					onmouseenter='VideoController(true, this)'
        					onmouseleave='VideoController(false, this)'
-       					src="book.mp4" loop>
+       					src="./assets/book.mp4" loop>
   				Your browser does not support the video tag.
 				</video>
 			</div>
 			<div class="slide three">
 				<p>Please enter the volume number that you want to browse:
-				<style>
-				    .button {
-				      background-color: gray;
-				      border: none;
-				      color: white;
-				      padding: 5px 12px;
-				      text-align: center;
-				      text-decoration: none;
-				      display: inline-block;
-				      font-size: 14px;
-				      margin: 2px 2px;
-				      cursor: pointer;
-				    }
-				  </style>
-				  <a href="#" class="button" onclick="volFunction()">chp#</a>
+					<button type="button" name="button1" onclick="volFunction()">Volume #</button>
 				</p>
 				<p id="demo"></p>
-			<script>
-			  function volFunction() {
-			    var vol = prompt("enter a vol number","0");
-			    if(vol=='6') {
-			      text = "correct";
-			    }
-			    else{
-			      text = "Try again...";
-			    }
-
-			    document.getElementById("demo").innerHTML = text;
-			  }
-			</script>
-
 			</div>
 			<div class="slide four">
 				<p>Please enter the chapter number that you want to browse:
-		    		<style>
-				    .button {
-				      background-color: gray;
-				      border: none;
-				      color: white;
-				      padding: 5px 12px;
-				      text-align: center;
-				      text-decoration: none;
-				      display: inline-block;
-				      font-size: 14px;
-				      margin: 2px 2px;
-				      cursor: pointer;
-				    }
-				  </style>
-				  <a href="#" class="button" onclick="chpFunction()">chp#</a>
-				
-		    		</p>
+				  <!-- <a href="#" class="button" onclick="chpFunction()">chp#</a> -->
+					<button type="button" name="button1" onclick="chpFunction()">Chapter #</button>
+		    </p>
 				<p id="demo2"></p>
-			<script>
-			  function chpFunction() {
-			    var chp = prompt("enter a chp number","0");
-			    if(chp=="19") {
-			      text = "correct";
-			    }
-			    else{
-			      text = "Try again...";
-			    }
-
-			    document.getElementById("demo2").innerHTML = text;
-			  }
-			</script>
 
 			</div>
 			<div class="slide five">
 				<p>Please enter the page number that you want to browse:
-				<style>
-				    .button {
-				      background-color: gray;
-				      border: none;
-				      color: white;
-				      padding: 5px 12px;
-				      text-align: center;
-				      text-decoration: none;
-				      display: inline-block;
-				      font-size: 14px;
-				      margin: 2px 2px;
-				      cursor: pointer;
-				    }
-				  </style>
-				  <a href="#" class="button" onclick="pgFunction()">chp#</a>
+				  <button type="button" name="button1" onclick="pgFunction()">Page #</button>
 				</p>
 		   	 <p id="demo3"></p>
-			<script>
-			  function pgFunction() {
-			    var page = prompt("enter a chp number","0");
-			    if(page=='98') {
-				text = "correct";
-			    }
-			    else{
-			      text = "Try again...";
-			    }
-
-			    document.getElementById("demo3").innerHTML = text;
-			  }
-			</script>
 
 			</div>
 			<div class="slide six">
@@ -134,16 +52,6 @@
 
 				<p> <button onclick="hintFunction()">Hint</button> </p>
 			    <p id="hint"></p>
-
-		      <script>
-			function hintFunction() {
-			  var hint = prompt("Hint? y/n","y");
-			  if(hint=='y') {
-			    text = "if you got all the correct vol/chp/pg #, follow cirrus through entering an url... that is made up with vol/chp/pg # format: ";
-			  }
-			  document.getElementById("hint").innerHTML = text;
-			}
-		      </script>
 
 			</div>
 			<div class="slide seven">

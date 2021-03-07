@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<title>Garden</title>
-	<script src="garden.js" async></script>
+	<script src="scripts/garden.js" async></script>
+	<link rel="stylesheet" href="styles/gardenstyles.css">
 </head>
 
 <body>
-  <h1>Garden</h1>
-  <img src="garden.png" width="50" height="60">
-  
-      <div class="slide one">
-		<p> Why there are Easter Eggs?:
-		<button onclick="easterEgg()">crack</button>
-                <button onclick="hint()">hint</button>
-		</p>
-                <p id="egginfo"></p>
-        
-        	<script>
-                    function crackeasterEgg(){
-                    	document.getElementById("egginfo").innerHTML = "My favorite disney princess is Mulan.";
-                    }
-                    function easterEgg(){
-                    	document.getElementById("egginfo").innerHTML = "This is a easter egg.";
-                    }
-                    function hint(){
-                    	document.getElementById("egginfo").innerHTML = "Needs a crack...";
-                    }
-                </script>
-        </div>
+  <!-- <h1>Garden</h1>
+  <img src="assets/garden.png" width="50" height="60"> -->
+	<div class="outer-wrapper">
+		<div class="wrapper">
+			<div class="slide one">
+				<div id="typedtext"></div>
+			</div>
+			<div class="slide two">
+				<div id="typedtext2"></div>
+			</div>
+	    <div class="slide three">
+				<p> Why there are Easter Eggs?:
+					<button onclick="easterEgg()">crack</button>
+			    <button onclick="hint()">hint</button>
+				</p>
+		    <p id="egginfo"></p>
+	    </div>
+		</div>
+	</div>
  </body>
 </html>

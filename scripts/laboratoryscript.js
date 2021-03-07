@@ -1,12 +1,38 @@
-// set up text to print, each item in array is new line
-var aText = new Array("Suddenly you feel a strange sense of worry. The experiment! ",
-                      "Something in your head shouts. You rush past the doors and past the hallways leading to the garden. ",
-                      "But how did you know it was the garden?")
-var bText = new Array("As you observe your new surroundings, you wonder if it could even be considered a garden. ",
-                      "Dark vines coiled around cold, stone columns, and ancient trees leaned over as if threatening to smother you. ",
-                      "In the center of the garden was a piece of parchment, with a strange symbol on it.",
-                      "And on each column in the garden, there were letters. What could this mean? ")
+// function () {
+//     // $('#submit').hide();
+//     // $('#tryagain').hide();
+//     var submit = document.getElementById("submit");
+//     var tryagain = document.getElementById("tryagain");
+//     submit.hide();
+//     tryagain.hide();
+//     $('#amount').keyup(function() {
+//         if ((this).val() == '') {
+//             // ('#submit').hide();
+//             // ('#tryagain').hide();
+//         }
+//         else if ((this).val() == '6/19'){
+//             submit.style.color: rgba(255,255,255,.75);
+//             $('#tryagain').hide();
+//         }
+//         else {
+//             tryagain.style.color: rgba(255,255,255,.75);
+//         }
+//     });
+// });
 
+// set up text to print, each item in array is new line
+var aText = new Array(
+"With the smell and taste of the mysterious liquid hitting your senses, you suddenly feel an urge to vomit.",
+"You stagger out through the doors of the kitchen to get outside.",
+"However, the doors opened to a strange room. This looks like...",
+"some kind of laboratory?",
+"There are several tables with beakers and research notes scattered all over.",
+"At the center of the table is a large microscope."
+);
+var bText = new Array(
+"You open the drawer under the microscope to find some slides.",
+ "Maybe there will be a clue that can be observed?"
+);
 var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
@@ -63,3 +89,5 @@ function typewriter2()
 
 typewriter();
 typewriter2();
+
+// ----------- //

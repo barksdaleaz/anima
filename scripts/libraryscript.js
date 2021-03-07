@@ -44,7 +44,7 @@ function typewriter()
 typewriter();
 
 function volFunction() {
-      var vol = prompt("enter a vol number","0");
+      var vol = prompt("Enter a volume number","0");
       if(vol=='6') {
           text = "correct";
     }
@@ -56,7 +56,7 @@ function volFunction() {
 }
 
 function chpFunction() {
-      var chp = prompt("enter a chp number","0");
+      var chp = prompt("Enter a chapter number","0");
       if(chp=="19") {
           text = "correct";
     }
@@ -68,7 +68,7 @@ function chpFunction() {
 }
 
 function pgFunction() {
-      var page = prompt("enter a chp number","0");
+      var page = prompt("Enter a page number","0");
       if(page=='98') {
           text = "correct";
     }
