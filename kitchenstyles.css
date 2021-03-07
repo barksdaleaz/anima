@@ -61,7 +61,12 @@ body {
   background: rgb(25,25,25);
 }
 .four {
-  background: rgb(25,25,25);
+  position: relative;
+  /* height: 400px; */
+  display: block;
+  background-image: url('moscato.jpg');
+  background-size: cover;
+  box-shadow: inset 0 0 200px black;
 }
 
 
