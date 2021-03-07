@@ -52,7 +52,6 @@ function typewriter2()
   sContents += bText[iRow++] + '<br />';
  }
  destination.innerHTML = sContents + bText[iIndex].substring(0, iTextPos) + "_";
- iArrLength = bText[iIndex].length;
  if ( iTextPos++ == iArrLength ) {
   iTextPos = 0;
   iIndex++;
