@@ -9,7 +9,7 @@
   <p>Once the water flowed into the fountain, you looked into the fountain and saw your reflection. Now you understand.</p>
   
   <h1>Reflection</h1>
-  <img src="reflection.jpg" width="50" height="60">
+  <img src="reflection.jpg" >
 </body>
 
 </html>
