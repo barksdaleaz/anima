@@ -48,8 +48,8 @@
           <div id="box1">
             <form action="">
                 <input type="string" name="amount" id="amount" />
-                <p name="submit" id="submit" style="display:none;">URL: /knowledge</p>
-                <p name="tryagain" id="tryagain" style="display:none;">Hmmm... that's not it</p>
+                <p name="submit" id="submit">URL: /knowledge</p>
+                <p name="tryagain" id="tryagain">Hmmm... that's not it</p>
             </form>
           </div>
         </div>
@@ -60,19 +60,16 @@
     </div>
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script type="text/javascript">
+        $('#submit').hide();
+        $('#tryagain').hide();
         $(document).ready(function() {
-            $('#submit').hide();
-            $('#tryagain').hide();
             $('#amount').keyup(function() {
-                if ($(this).val() == '') {
-                    $('#submit').hide();
-                    $('#tryagain').hide();
-                }
-                else if ($(this).val() == '6/19'){
+                if ($(this).val() == '6/19'){
                     $('#submit').show();
                     $('#tryagain').hide();
                 }
                 else {
+                    $('#submit').hide();
                     $('#tryagain').show();
                 }
             });
