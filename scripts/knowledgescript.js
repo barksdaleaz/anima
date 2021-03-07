@@ -4,7 +4,7 @@ var aText = new Array(
   "A shelf in the back slides to the left, revealing another room.",
   "You enter into a dim room full of bookcases.",
   "A strange meditative music plays in the background as the lamps flicker.",
-  "Maybe one of these books will reveal more information about why you are here."
+  "Maybe one of these books will reveal more information about why you are here. But where should you look?"
 );
 // var aText = new Array(
 // "Short test",
@@ -83,7 +83,7 @@ function pgFunction() {
 function hintFunction() {
     var hint = prompt("Hint? y/n","y");
     if(hint=='y') {
-      text = "if you got all the correct vol/chp/pg #, follow cirrus through entering an url... that is made up with vol/chp/pg # format: ";
+      text = "State flower of Mississippi";
       }
     document.getElementById("hint").innerHTML = text;
   }
