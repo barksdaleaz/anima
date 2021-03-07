@@ -8,49 +8,51 @@
 </head>
 
 <body>
-  <h1>Library</h1>
-  <img src="library.png" width="50" height="60">
-	<div class="scrolling-wrapper">
-	  <div id="typedtext" class="card"></div>
-	  <div class="card">
-			<p style="color:darkviolet;"> But where should you look? Hint: some # from the labratory</p>
+	<div class="outer-wrapper">
+		<div class="wrapper">
+			<div class="slide one">
+				<div id="typedtext"></div>
+			</div>
+			<div class="slide two">
+				<p style="color:darkviolet;"> But where should you look? Hint: some # from the laboratory</p>
 
-			<p>Please enter the volume number that you want to brownse:
-			<button onclick="volFunction()">volume#</button>
-			</p>
-			<p id="demo"></p>
-	  </div>
-	  <div class="card">
-			<p>Please enter the chapter number that you want to brownse:
-	    <button onclick="chpFunction()">chp#</button>
-	    </p>
-	    <p id="demo2"></p>
-	  </div>
-	  <div class="card">
-			<p>Please enter the page number that you want to brownse:
-	    	<button onclick="pgFunction()">page#</button>
-			</p>
-	    <p id="demo3"></p>
-	  </div>
-	  <div class="card">
-			<p>It's getting darker and darker... The light goes off!!!</p>
-		  <p>Where is this plant heading to...?</p>
-		  <iframe src="https://console.echoar.xyz/webar?key=delicate-block-6852&entry=e91cd52f-ee89-4cd2-8e52-0173a60fa893"
-		  width="40" height="50"></iframe>
+				<p>Please enter the volume number that you want to browse:
+				<button onclick="volFunction()">volume#</button>
+				</p>
+				<p id="demo"></p>
+			</div>
+			<div class="slide three">
+			</div>
+			<div class="slide four">
+				<p>Please enter the chapter number that you want to browse:
+		    <button onclick="chpFunction()">chp#</button>
+		    </p>
+			</div>
+			<div class="slide five">
+				<p>Please enter the page number that you want to browse:
+		    	<button onclick="pgFunction()">page#</button>
+				</p>
+		    <p id="demo3"></p>
 
-			<p> <button onclick="hintFunction()">Hint</button> </p>
-		    <p id="hint"></p>
-	  </div>
-	  <div class="card">
-			<p>
+			</div>
+			<div class="slide six">
+				<p>It's getting darker and darker... The light goes off!!!</p>
+			  <p>Where is this plant heading to...?</p>
+			  <iframe src="https://console.echoar.xyz/webar?key=delicate-block-6852&entry=e91cd52f-ee89-4cd2-8e52-0173a60fa893"
+			  width="300" height="400"></iframe>
 
-			follow cirrus: <a href="">
-			<img src="plant_cirrus.jpg" width="10" height="10">
-			</a>
-		  </p>
-	  </div>
-	  <div class="card">item 7</div>
-	  <div class="card">item 8</div>
+				<p> <button onclick="hintFunction()">Hint</button> </p>
+			    <p id="hint"></p>
+
+			</div>
+			<div class="slide seven">
+				<p>follow cirrus:<a href="">
+				<img src="plant_cirrus.jpg" width="10" height="10">
+				</a>
+			  </p>
+
+			</div>
+		</div>
 	</div>
 
 </body>
